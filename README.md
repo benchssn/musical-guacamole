@@ -1,2 +1,2 @@
 # musical-guacamole
-My cybersec journey
+my cybersecurity journey
