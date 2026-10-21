@@ -1,0 +1,121 @@
+{
+  "assemblyAiApiKey": "",
+  "openAiApiKey": "",
+  "anthropicApiKey": "",
+  "googleApiKey": "",
+  "openRouterApiKey": "",
+  "elevenLabsApiKey": "",
+  "deepgramApiKey": "",
+  "mistralApiKey": "",
+  "recordingDirectory": "matchObsidianResourceFolder",
+  "transcriptDirectory": "matchObsidianNoteFolder",
+  "transcriptPlatform": "openAi",
+  "processPlatform": "openAi",
+  "isMultiSpeakerEnabled": false,
+  "llmModel": "gpt-5.6-terra",
+  "anthropicModel": "claude-sonnet-5",
+  "geminiModel": "gemini-3.5-flash",
+  "openRouterModel": "anthropic/claude-sonnet-5",
+  "assemblyAiLlmModel": "claude-sonnet-4-6",
+  "noteFilenamePrefix": "scribe-{{date}}-",
+  "recordingFilenamePrefix": "scribe-recording-{{date}}",
+  "dateFilenameFormat": "YYYY-MM-DD",
+  "isSaveAudioFileActive": true,
+  "isOnlyTranscribeActive": false,
+  "isAppendToActiveFile": false,
+  "isDisableLlmTranscription": false,
+  "audioFileLanguage": "auto",
+  "scribeOutputLanguage": "en",
+  "activeNoteTemplate": {
+    "id": "default",
+    "name": "Scribe",
+    "sections": [
+      {
+        "id": "system-audio",
+        "sectionType": "audio",
+        "sectionHeader": "# Audio",
+        "sectionInstructions": ""
+      },
+      {
+        "id": "system-transcript",
+        "sectionType": "transcript",
+        "sectionHeader": "",
+        "sectionInstructions": "",
+        "isCollapsedByDefault": false
+      },
+      {
+        "id": "1",
+        "sectionHeader": "## Summary",
+        "sectionInstructions": "A summary of the transcript in Markdown.  It will be nested under a h2 # tag, so use a tag less than that for headers\nConcise bullet points containing the primary points of the speaker"
+      },
+      {
+        "id": "2",
+        "sectionHeader": "## Insights",
+        "sectionInstructions": "Insights that you gained from the transcript in Markdown.\nA brief section, a paragraph or two on what insights and enhancements you think of\nSeveral bullet points on things you think would be an improvement, feel free to use headers\nIt will be nested under an h2 tag, so use a tag less than that for headers\n        "
+      },
+      {
+        "id": "3",
+        "sectionHeader": "## Mermaid Chart",
+        "sectionOutputPrefix": "```mermaid",
+        "sectionOutputPostfix": "```",
+        "sectionInstructions": "A valid unicode mermaid chart that shows a concept map consisting of both what insights you had along with what the speaker said for the mermaid chart, \nDont wrap it in anything, just output the mermaid chart.  \nDo not use any special characters that arent letters in the nodes text, particularly new lines, tabs, or special characters like apostraphes or quotes or commas"
+      },
+      {
+        "id": "4",
+        "sectionHeader": "## Answered Questions",
+        "isSectionOptional": true,
+        "sectionInstructions": "If the user says \"Hey Scribe\" or alludes to you, asking you to do something, answer the question or do the ask and put the answers here\nPut the text in markdown, it will be nested under an h2 tag, so use a tag less than that for headers\nSummarize the question in a short sentence as a header and place your reply nicely below for as many questions as there are\nAnswer their questions in a clear and concise manner"
+      }
+    ]
+  },
+  "noteTemplates": [
+    {
+      "id": "default",
+      "name": "Scribe",
+      "sections": [
+        {
+          "id": "system-audio",
+          "sectionType": "audio",
+          "sectionHeader": "# Audio",
+          "sectionInstructions": ""
+        },
+        {
+          "id": "system-transcript",
+          "sectionType": "transcript",
+          "sectionHeader": "",
+          "sectionInstructions": "",
+          "isCollapsedByDefault": false
+        },
+        {
+          "id": "1",
+          "sectionHeader": "## Summary",
+          "sectionInstructions": "A summary of the transcript in Markdown.  It will be nested under a h2 # tag, so use a tag less than that for headers\nConcise bullet points containing the primary points of the speaker"
+        },
+        {
+          "id": "2",
+          "sectionHeader": "## Insights",
+          "sectionInstructions": "Insights that you gained from the transcript in Markdown.\nA brief section, a paragraph or two on what insights and enhancements you think of\nSeveral bullet points on things you think would be an improvement, feel free to use headers\nIt will be nested under an h2 tag, so use a tag less than that for headers\n        "
+        },
+        {
+          "id": "3",
+          "sectionHeader": "## Mermaid Chart",
+          "sectionOutputPrefix": "```mermaid",
+          "sectionOutputPostfix": "```",
+          "sectionInstructions": "A valid unicode mermaid chart that shows a concept map consisting of both what insights you had along with what the speaker said for the mermaid chart, \nDont wrap it in anything, just output the mermaid chart.  \nDo not use any special characters that arent letters in the nodes text, particularly new lines, tabs, or special characters like apostraphes or quotes or commas"
+        },
+        {
+          "id": "4",
+          "sectionHeader": "## Answered Questions",
+          "isSectionOptional": true,
+          "sectionInstructions": "If the user says \"Hey Scribe\" or alludes to you, asking you to do something, answer the question or do the ask and put the answers here\nPut the text in markdown, it will be nested under an h2 tag, so use a tag less than that for headers\nSummarize the question in a short sentence as a header and place your reply nicely below for as many questions as there are\nAnswer their questions in a clear and concise manner"
+        }
+      ]
+    }
+  ],
+  "isFrontMatterLinkToScribe": true,
+  "selectedAudioDeviceId": "",
+  "audioFileFormat": "webm",
+  "customOpenAiBaseUrl": "",
+  "customTranscriptModel": "whisper-1",
+  "customChatModel": "gpt-4o"
+}
