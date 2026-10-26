@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/google cybersecurity/Foundations.md",
+                "file": "briefs/Localhost web probe.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Foundations"
+              "title": "Localhost web probe"
             }
           }
         ]
@@ -191,8 +191,9 @@
   },
   "active": "9a365b10b57b3e72",
   "lastOpenFiles": [
-    "notes/tools/Ethical hacking tools.md",
     "notes/google cybersecurity/Foundations.md",
+    "briefs/Localhost web probe.md",
+    "notes/tools/Ethical hacking tools.md",
     "notes/google cybersecurity",
     "notes/connections/Bluetooth.md",
     "notes/tools",
