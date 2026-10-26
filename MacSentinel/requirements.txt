@@ -1,0 +1,2 @@
+# Already installed on this Mac; no installation needed for stage 1.
+psutil==7.1.3
